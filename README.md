@@ -57,10 +57,12 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independent-Project-4.gi
 
 <br>
 
-Current logic returns as follows:
+Tests:
 
-
-
+Describe: Pizza()
+Test: "It should return a Pizza object with up to three properties for toppings and size"
+Code: 
+Expected Output:  
 ---
 
 #### Copyright (c) <2023> <Deante Cacatian>
