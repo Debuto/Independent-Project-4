@@ -11,7 +11,12 @@
     <form name="pizzaform">
       <u><b>ORDER HERE!</b>></u>
       <p><b>Size:</b>
-        <option value='' disabled selected>Choose a size!</option>
+        <select name="size" id="size" required>
+          <option value='' disabled selected>Choose a size!</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
       </p>
       <p><b>1st topping:</b></p>
       <p><b>2nd topping:</b></p>
