@@ -9,9 +9,7 @@ Pizza.prototype.getPizzaDetails = function() {
   return "So you ordered the " + this.pizzaSize + ", with the toppings: " + this.t1 + ", " + this.t2 + ", and " + this.t3 + ".";
 };
 
-// Define the getPizzaPrice method on the prototype of the Pizza constructor
 Pizza.prototype.getPizzaPrice = function() {
-  // Set fixed prices for different pizza sizes and toppings (for demonstration purposes)
   const sizePrice = {
     small: 8,
     medium: 10,
@@ -24,7 +22,6 @@ Pizza.prototype.getPizzaPrice = function() {
     olives: 1.5,
   };
 
-  // Calculate the total price based on the selected size and toppings
   const totalPrice =
     sizePrice[this.pizzaSize] +
     toppingPrice[this.t1] +
