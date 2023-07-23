@@ -23,32 +23,10 @@ Pizza.prototype.getPizzaPrice = function() {
   };
 
   const totalPrice =
-    sizePrice[this.pizzaSize] +
-    toppingPrice[this.t1] +
-    toppingPrice[this.t2] +
-    toppingPrice[this.t3];
-
-  return "Total Price: $" + totalPrice.toFixed(2);
-};
-
-Pizza.prototype.getPizzaPrice = function() {
-  const sizePrice = {
-    small: 8,
-    medium: 10,
-    large: 12,
-  };
-
-  const toppingPrice = {
-    cheese: 1,
-    pepperoni: 2,
-    olives: 1.5,
-  };
-
-  const totalPrice =
-    sizePrice[this.pizzaSize] +
-    toppingPrice[this.t1] +
-    toppingPrice[this.t2] +
-    toppingPrice[this.t3];
+    parseFloat(sizePrice[this.pizzaSize.toLowerCase()]) +
+    parseFloat(toppingPrice[this.t1.toLowerCase()]) +
+    parseFloat(toppingPrice[this.t2.toLowerCase()]) +
+    parseFloat(toppingPrice[this.t3.toLowerCase()]);
 
   return "Total Price: $" + totalPrice.toFixed(2);
 };

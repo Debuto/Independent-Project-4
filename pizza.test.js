@@ -18,5 +18,5 @@ test('Pizza.getPizzaDetails()', () => {
 test('Pizza.getPizzaPrice()', () => {
   const pizza = new Pizza('Large', 'Pepperoni', 'Cheese', 'Olives');
 
-  expect(pizza.getPizzaPrice()).toBe('Total Price: $16');
+  expect(pizza.getPizzaPrice()).toBe('Total Price: $16.50');
 });
