@@ -60,11 +60,7 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independent-Project-4.gi
 Tests:
 
 Describe: Pizza()
-<<<<<<< HEAD
 Test: "It should return a Pizza object with up to three properties for toppings and size"
-=======
-Test: "It should return a Pizza object with up to three properties for toppings and size."
->>>>>>> 0dea1d1a2269370165b49f3fa54b8aab0677df1d
 Code: 
 Expected Output:  
 ---
