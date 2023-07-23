@@ -4,47 +4,48 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
   </head>
-  <body class="pizzamenu">
-    <h1>Welcome to P-P-Pizzatown!</h1>
-    <h3>You're obviously here for the world famous pizza, 
-      just follow along the order menu below and you'll be fine.</h3>
-    <form name="pizzaform" id="pizzaform">
-      <u><b>ORDER HERE!</b></u>
-      <p><b>Size:</b>
-        <select name="size" id="size" required>
-          <option value='' disabled selected>Choose a size!</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-        </select>
-      </p>
-      <p><b>1st topping:</b>
-        <select name="t1" id="t1" required>
-          <option value='' disabled selected>Choose a topping!</option>
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-          <option value="olives">Olives</option>
-        </select>
-      </p>
-      <p><b>2nd topping:</b>
-        <select name="t2" id="t2" required>
-          <option value='' disabled selected>Another one?</option>
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-          <option value="olives">Olives</option>
-        </select>
-      </p>
-      <p><b>3rd topping:</b>
-        <select name="t3" id="t3" required>
-          <option value='' disabled selected>Another one?!</option>
-          <option value="cheese">Cheese</option>
-          <option value="pepperoni">Pepperoni</option>
-          <option value="olives">Olives</option>
-        </select>
-      </p>
-      <button type="submit">Checkout</button>
-    </form>
-
-    <div id="result"></div>
+  <body class="pizzamenu legible">
+    <div class="whiteBox">
+      <h1>Welcome to P-P-Pizzatown!</h1>
+      <h3>You're obviously here for the world famous pizza, 
+        just follow along the order menu below and you'll be fine.</h3>
+      <form name="pizzaform" id="pizzaform">
+        <u><b>ORDER HERE!</b></u>
+        <p><b>Size:</b>
+          <select name="size" id="size" required>
+            <option value='' disabled selected>Choose a size!</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </p>
+        <p><b>1st topping:</b>
+          <select name="t1" id="t1" required>
+            <option value='' disabled selected>Choose a topping!</option>
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="olives">Olives</option>
+          </select>
+        </p>
+        <p><b>2nd topping:</b>
+          <select name="t2" id="t2" required>
+            <option value='' disabled selected>Another one?</option>
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="olives">Olives</option>
+          </select>
+        </p>
+        <p><b>3rd topping:</b>
+          <select name="t3" id="t3" required>
+            <option value='' disabled selected>Another one?!</option>
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="olives">Olives</option>
+          </select>
+        </p>
+        <button type="submit" class="submit">Checkout</button>
+      </form>
+      <div id="result"></div>
+    </div>
   </body>
 </html>

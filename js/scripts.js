@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
   }
 
   Pizza.prototype.getPizzaDetails = function() {
-    return "Size: " + this.pizzaSize + ", Toppings: " + this.t1 + ", " + this.t2 + ", " + this.t3;
+    return "So you ordered the " + this.pizzaSize + ", with " + this.t1 + ", " + this.t2 + ", and " + this.t3 + ".";
   };
 
   Pizza.prototype.getPizzaPrice = function() {
@@ -29,7 +29,7 @@ window.addEventListener('load', function() {
       parseFloat(toppingPrice[this.t2.toLowerCase()]) +
       parseFloat(toppingPrice[this.t3.toLowerCase()]);
 
-    return "Total Price: $" + totalPrice.toFixed(2);
+    return "That'll be $" + totalPrice.toFixed(2) + ". BUY THIS PIZZZAA, IT'S LIKE ALREAADY DONE!";
   };
 
   document.getElementById('pizzaform').addEventListener('submit', function(event) {

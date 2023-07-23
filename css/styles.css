@@ -1,0 +1,25 @@
+body {
+  background-image: url('../gifs/pizza-time-spiderman.gif');
+  text-align: center;
+}
+.whiteBox {
+  background-color: white;
+  outline: auto;
+  padding: 20px 40px;
+  margin: 50px 500px 50px 500px;
+}
+.submit {
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+.submit:hover {
+  background-color: #46a049;
+  border: 2px solid green;
+  color: white;
+}
