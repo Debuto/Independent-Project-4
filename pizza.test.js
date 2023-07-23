@@ -1,4 +1,4 @@
-const Pizza = require('./scripts');
+const Pizza = require('./js/scripts');
 
 test('Creating a new Pizza object', () => {
   const pizza = new Pizza('Large', 'Pepperoni', 'Mushrooms', 'Olives');
