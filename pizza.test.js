@@ -10,7 +10,7 @@ test('Creating a new Pizza object', () => {
 });
 
 test('Pizza.getPizzaDetails()', () => {
-  const pizza = new Pizza('Medium', 'Cheese', 'Ham', 'Pineapple');
+  const pizza = new Pizza('Large', 'Pepperoni', 'Mushrooms', 'Olives');
 
-  expect(pizza.getPizzaDetails()).toBe('Size: Medium, Toppings: Cheese, Ham, Pineapple');
+  expect(pizza.getPizzaDetails()).toBe('So you ordered the Large, with the toppings: Pepperoni, Mushrooms, and Olives.');
 });
