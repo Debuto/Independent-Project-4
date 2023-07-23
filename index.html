@@ -6,10 +6,10 @@
   </head>
   <body class="pizzamenu">
     <h1>Welcome to P-P-Pizzatown!</h1>
-    <h3>You're obviously here for the world famous pizzas, 
+    <h3>You're obviously here for the world famous pizza, 
       just follow along the order menu below and you'll be fine.</h3>
-    <form name="pizzaform">
-      <u><b>ORDER HERE!</b>></u>
+    <form name="pizzaform" id="pizzaform">
+      <u><b>ORDER HERE!</b></u>
       <p><b>Size:</b>
         <select name="size" id="size" required>
           <option value='' disabled selected>Choose a size!</option>
@@ -44,5 +44,7 @@
       </p>
       <button type="submit">Checkout</button>
     </form>
+
+    <div id="result"></div>
   </body>
 </html>
