@@ -100,7 +100,7 @@ function Pizza(size, topping1, topping2, topping3) {
 
 Expected Output:  
 ```js
-const Pizza = require('./scripts');
+const Pizza = require('./js/scripts');
 
 describe('Pizza', () => {
   test('getPizzaDetails should return the correct pizza details', () => {
