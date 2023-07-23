@@ -1,4 +1,4 @@
-# 
+#Project Name: Pizza Parlor (Pizza Time!)
 
 ### By: **Deante Cacatian**
 
@@ -33,8 +33,7 @@ Download a zip or clone repository in desired local directory. Open with VScode 
 
 ## Description:
 
-
-(web application that takes a number from the user and returns a list of values from 0 to the user's inputted number with the following substitutions made within the returned list)
+This is a website for a pizza parlor. You're able to order atleast 3 toppings and choose a size for your pizza, and no more!
 
 *This is Deante's 4th portfolio project with Epicodus!
 Epicodus and coding partners from weekly lessons for knowledge of HTML
@@ -59,10 +58,72 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independent-Project-4.gi
 
 Tests:
 
-Describe: Pizza()
-Test: "It should return a Pizza object with up to three properties for toppings and size"
-Code: 
+Describe: Pizza() <br><br>
+Test: "It should return a Pizza object with up to three properties for toppings and size. After 3 choices are selected will return string with pizza ordered and price!" <br>
+
+---
+Code: <br><br>
+```js
+function Pizza(size, topping1, topping2, topping3) {
+    this.pizzaSize = size;
+    this.t1 = topping1;
+    this.t2 = topping2;
+    this.t3 = topping3;
+  }
+
+  Pizza.prototype.getPizzaDetails = function() {
+    return "So you ordered the " + this.pizzaSize + ", with " + this.t1 + ", " + this.t2 + ", and " + this.t3 + ".";
+  };
+
+  Pizza.prototype.getPizzaPrice = function() {
+    const sizePrice = {
+      small: 8,
+      medium: 10,
+      large: 12,
+    };
+
+    const toppingPrice = {
+      cheese: 1.5,
+      pepperoni: 2,
+      olives: 1.25,
+    };
+
+    const totalPrice =
+      parseFloat(sizePrice[this.pizzaSize.toLowerCase()]) +
+      parseFloat(toppingPrice[this.t1.toLowerCase()]) +
+      parseFloat(toppingPrice[this.t2.toLowerCase()]) +
+      parseFloat(toppingPrice[this.t3.toLowerCase()]);
+
+    return "That'll be $" + totalPrice.toFixed(2) + ". BUY THIS PIZZZAA, IT'S LIKE ALREAADY DONE!";
+  };
+  ```
+
 Expected Output:  
+```js
+const Pizza = require('./scripts');
+
+describe('Pizza', () => {
+  test('getPizzaDetails should return the correct pizza details', () => {
+    const pizza = new Pizza('medium', 'cheese', 'pepperoni', 'olives');
+    expect(pizza.getPizzaDetails()).toBe('So you ordered the medium, with cheese, pepperoni, and olives.');
+  });
+
+  test('getPizzaPrice should return the correct pizza price', () => {
+    const pizza = new Pizza('large', 'pepperoni', 'olives', 'cheese');
+    expect(pizza.getPizzaPrice()).toBe("That'll be $15.25. BUY THIS PIZZZAA, IT'S LIKE ALREAADY DONE!");
+  });
+});
+
+```
+
+---
+
+# Known bugs:
+
+Issue with test.js, previous tests were successful before window.addeventlistener. Unable ton find dir in OneDrive. Possible Onedrive issue...
+
+Other than that HTML and js work as intended..
+
 ---
 
 #### Copyright (c) <2023> <Deante Cacatian>
